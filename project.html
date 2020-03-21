@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            margin:150px auto;
+            width:60%;
+        }
+        .stone, .papper, .scissor {
+            background-color: #ffff;
+            width: 180px;
+            height: 180px; 
+            border:10px solid cyan;
+            border-radius: 50%;
+           display: block;
+           
+          
+        }
+        .stone, .papper, .scissor, i{
+            font-size: 80px;
+            text-align: center; 
+            padding-top: 30px;
+            
+        }
+        .red{
+            color: Red;
+            display: inline-block;
+            
+        }
+        .red:hover{
+            color: black;
+            border:10px solid black;
+        }
+        .green{
+            color: green;
+            display: inline-block;
+            margin-left: 400px;
+        }
+        .green:hover{
+            color: black;
+            border:10px solid black;
+        }
+
+        .blue{
+            color: blue;
+            margin:50px auto;
+        }
+        .blue:hover{
+            color: black;
+            border:10px solid black;
+        }
+         #computer{
+                background-color: #ffff;
+            width: 180px;
+            height: 180px; 
+            border:10px solid cyan;
+            border-radius: 50%;
+           display: none;
+           margin: auto;
+        
+           
+         }
+         .style{
+            font-size: 80px;
+            text-align: center; 
+            padding-top: 30px;
+         }
+         .screen{
+             width: 150px;
+             height: 100px;
+             border: 5px solid #0000;
+             margin:auto 50px;
+             font-size: 32px;
+             display: inline-block;
+         }
+         .screen h1{
+            display: inline;
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+<div class="screen"><span>score-Tie:</span> <h1 id="one"></h1></div>
+    <div class="screen"><span>score-win:</span>
+        <h1 id="two"></h1>
+ </div>
+<div class="screen"><span>score-lose:</span>
+    <h1 id="three"></h1>
+</div>
+    <div class="stone red"> 
+        <i class="fas fa-hand-rock"></i>
+    </div>
+    <div class="papper green">
+        <i class="fas fa-hand-paper"></i>
+   </div>
+   <div class="scissor blue">
+        <i class="fas fa-hand-scissors"></i>  
+ </div>
+ <div id="computer"></div>
+</div>
+<script src="all.js"></script>
+<script src="project.js"></script>
+</body>
+</html>
